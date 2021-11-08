@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta carset="UTF-8">
+
+  </head>
+<body>
+  <div class = 'container'>
+  <div class = 'card'>
+    <h1>Entrar</h1>
+    
+    <div class = 'label-float'>
+      <input type = 'text' id = 'usuario' paceholder = 'Usuário'>
+      <label for = 'usuario'>Usuario</label>
+</div>
+    
+     <div class = 'label-float'>
+      <input type = 'password' id = 'senha' paceholder = ' '>
+      <label for = 'usuario'>Senha</label>
+</div>      
+    
+    <div>
+      <button onclick="logar()">Entrar</button>
+      </div> 
+    
+      <div>
+        <hr>
+        </div> 
+ </div>
+  </div>
+  
+  </body>
+</html>
+CSS......
+@import url ('https://fonts.googleapis.com/css2? family = Kaisei + Opti & display = swap'); 
+*{
+  margin: 0;
+  padding: 0;
+  font-family: Kaisei Opti, serif;
+}
+
+body{
+  background-image: url('https://img.elo7.com.br/product/zoom/1B8AE1A/papel-de-parede-arabesco-lilas-e-roxo-2-5m-papel-de-parede-adesivo.jpg');
+  background-repeat: no repeat;
+  background-size: cover;
+  background-attachment: fixed
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  widht: 100%;
+  margin-top: 100px;
+}
+
+.card{
+  background-color: #ffffff;
+  padding: 30px;
+  border-radius: 4%;
+  box-shadow: 3px 3px 1px 0px #1E90FF;
+}
+
+h1{
+  text-align: center;
+  margin-bottom: 20px;
+  color: #1E90FF;
+}
+
+.label-float input{
+  width: 100%;
+  padding: 5px 5px;
+  display: inline-block;
+  border: 0;
+  border-buttom: 5px solid # ; 
+  backgroun-color: #4682B4;
+  outline: none;
+  min-widht: 180px;
+  font-size: 16px;
+  transition: all .3s ease-out;
+  border-radius: 0
+}
+
+.label-float{
+  position: relative;
+  padding-top: 13px;
+  margin-top: 5%;
+  margin-bottom: 5%;
+}
+
+.label-float input: focus{
+  border-bottom: 2px solid # ;
+  
+}
+
+.label-float label{
+  color: #00FF7F;
+  pointer-event: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  margin-top: 13px;
+  transition: all .3s ease-out;
+}
+
+.label-float input: focus + label{
+  font-size: 13px;
+  margin-top: 0;
+  color: #98FB98;
+}
+
+button{
+  background-color: transparent;
+  border-color: #4DD0E1;
+  color: #0097A7;
+  padding: 7px;
+  font-weigth: bold;
+  font-size: 12pt;
+  magin-top: 20px;
+  border-radius: 4px;
+  cursor: pointer;
+  outline: none;
+  transition: all .4s ease-out;
+}
+
+button: hover{
+  backgroun-color: #FFD600;
+  color: #98FB98;
+}
+
+.justift-center{
+  display: flex;
+  justify-content: center;
+}
+
+hr{
+  margin-top: 10%;
+  margin-buttom: 90%;
+  widht: 50%;
+  color:#98FB98;
+}
+
+p{
+  color: #98FB98;
+  font-size: 20pt;
+  text-align: center;
+}
+
+a{
+  color: #880E4F;
+  font-weight: bold;
+  text-decoration: none;
+  transition: all .3s ease-out; 
+}
+
+a: hover{
+  color:#98FB98;
+}
+
